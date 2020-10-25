@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -530159753, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 3
+  lastUpdatedAtString: 2020-10-25T20:36:17.448+08:00
+  initializedAtString: 2020-10-25T20:36:17.448+08:00
+  log:
+  - commitID: 0ce2301dca483aaf3214879da47677a13082a227
+    mergeA: 
+    mergeB: 
+    authorName: texwood0935
+    authorEmail: 1213712563@qq.com
+    commitEmail: 1213712563@qq.com
+    commitName: texwood0935
+    summary: "NABCD\u6A21\u578B\u7684\u521D\u7248"
+    description: 
+    timeString: 2020-10-25T18:55:31.000+08:00
+    commitTimeString: 2020-10-25T18:55:31.000+08:00
+    changes:
+    - path: NABCD.md
+      fullPath: "D:\\isnot_software\\\u5927\u5B66\\\u8F6F\u5DE5\u4F5C\u4E1A\\Software-Engineering-HW\\NABCD.md"
+      projectPath: ..\NABCD.md
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 6fe5601bff874e0b26605a957032c6e5b724d20f
+    mergeA: 
+    mergeB: 
+    authorName: texwood0935
+    authorEmail: 43787245+texwood0935@users.noreply.github.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: Create README.md
+    description: 
+    timeString: 2020-10-25T18:25:07.000+08:00
+    commitTimeString: 2020-10-25T18:25:07.000+08:00
+    changes:
+    - path: README.md
+      fullPath: "D:\\isnot_software\\\u5927\u5B66\\\u8F6F\u5DE5\u4F5C\u4E1A\\Software-Engineering-HW\\README.md"
+      projectPath: ..\README.md
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+  - commitID: e8eb1174400352c6b1d54773111039f5a83aeb70
+    mergeA: 
+    mergeB: 
+    authorName: texwood0935
+    authorEmail: 1213712563@qq.com
+    commitEmail: 1213712563@qq.com
+    commitName: texwood0935
+    summary: "\u5728\u201Cmaster\u201D\u4E0A\u63D0\u4EA4"
+    description: 
+    timeString: 2020-10-25T18:22:39.000+08:00
+    commitTimeString: 2020-10-25T18:22:39.000+08:00
+    changes:
+    - path: NABCD.md
+      fullPath: "D:\\isnot_software\\\u5927\u5B66\\\u8F6F\u5DE5\u4F5C\u4E1A\\Software-Engineering-HW\\NABCD.md"
+      projectPath: ..\NABCD.md
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
