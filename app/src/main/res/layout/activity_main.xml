@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:fitsSystemWindows="true">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_main"
+        android:background="#3366FF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="MATHAPP"
+        app:titleTextColor="#ffffff"/>
+
+    <RelativeLayout
+        android:layout_below="@id/toolbar_main"
+        android:id="@+id/ButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="30dp">
+
+
+        <Button
+            android:id="@+id/JZCTBtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="256dp"
+            android:background="@drawable/button1"
+            android:text="家长出题"
+            android:textColor="#ffffff"
+            android:textSize="27sp"
+            />
+
+
+        <Button
+            android:id="@+id/KSKSBtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="128dp"
+            android:background="@drawable/button2"
+            android:text="快速开始"
+            android:textColor="#ffffff"
+            android:textSize="27sp" />
+
+        <Button
+            android:id="@+id/CTRJtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/button3"
+            android:text="错题日记"
+            android:textColor="#ffffff"
+            android:textSize="27sp"
+            />
+
+        <View
+            android:layout_width="240dp"
+            android:layout_height="320dp"
+            android:layout_marginTop="140dp"
+            android:background="@drawable/boy"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="450dp"
+            android:text="加油！坚持就是胜利！"
+            android:textSize="30dp"
+            android:textColor="#ffffff"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/SHOPBtn"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:text="商城"/>
+
+        <Button
+            android:id="@+id/MINEBtn"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="200dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:text="我的" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
