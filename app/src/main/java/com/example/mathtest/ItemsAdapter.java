@@ -13,7 +13,6 @@ import java.util.ArrayList;
 public class ItemsAdapter extends ArrayAdapter<Items> {
     private int resourceId;
 
-
     public ItemsAdapter(Context context, int resource, ArrayList<Items> objects) {
         super(context, resource,objects);
         resourceId =  resource;
@@ -30,6 +29,7 @@ public class ItemsAdapter extends ArrayAdapter<Items> {
             viewHolder.name = view.findViewById(R.id.shopname);
             viewHolder.status = view.findViewById(R.id.status);
             viewHolder.price = view.findViewById(R.id.price);
+            viewHolder.coins = view.findViewById(R.id.coins);
             view.setTag(viewHolder);
         }
         else {
@@ -39,9 +39,11 @@ public class ItemsAdapter extends ArrayAdapter<Items> {
         String Nstring = items.getName();
         String Sstring = "商品描述: " + items.getStatus();
         String Pstring = "商品价格: " + items.getPrice_String();
+        String Cstring = "你的金币: " + GoldCoins.getInstance().GetCoins_String();
         viewHolder.name.setText(Nstring);
         viewHolder.status.setText(Sstring);
         viewHolder.price.setText(Pstring);
+        viewHolder.coins.setText(Cstring);
         return view;
     }
 
@@ -49,6 +51,7 @@ public class ItemsAdapter extends ArrayAdapter<Items> {
         TextView name;
         TextView status;
         TextView price;
+        TextView coins;
     }
 
 }
