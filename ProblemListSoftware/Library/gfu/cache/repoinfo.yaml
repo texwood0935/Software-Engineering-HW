@@ -13,26 +13,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2020-10-25T20:35:24.022+08:00
-  initializedAtString: 2020-10-25T20:35:24.022+08:00
+  lastUpdatedAtString: 2020-12-10T21:52:33.576+08:00
+  initializedAtString: 2020-12-10T21:52:33.576+08:00
   currentGitRemote:
     name: origin
-    url: https://github.com/texwood0935/Software-Engineering-HW.git
+    url: git@github.com:wyz894272237/Software-Engineering-HW.git
     login: 
     user: 
     host: 
     function: 0
     token: 
   currentGitBranch:
-    name: master
-    tracking: origin/master
+    name: wyz
+    tracking: origin/wyz
   currentConfigBranch:
-    name: master
+    name: wyz
     remote:
       name: origin
-      url: https://github.com/texwood0935/Software-Engineering-HW.git
-    trackingBranch: master
+      url: git@github.com:wyz894272237/Software-Engineering-HW.git
+    trackingBranch: wyz
   currentConfigRemote:
     name: origin
-    url: https://github.com/texwood0935/Software-Engineering-HW.git
+    url: git@github.com:wyz894272237/Software-Engineering-HW.git
   currentHead: 
