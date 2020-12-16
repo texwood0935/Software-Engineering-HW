@@ -134,6 +134,8 @@ public class DTActivity extends AppCompatActivity {
                                 }
                         });
                         isReturn.show();
+                        //增加金币数，每对5道题5个金币
+                        GoldCoins.getInstance().AddCoins(NumberOfRight*5);
                     }
                 }
                 else {  //未回答时的响应
