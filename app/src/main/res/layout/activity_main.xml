@@ -13,7 +13,7 @@
         android:background="#3366FF"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:title="MATHAPP"
+        app:title="@string/app_name"
         app:titleTextColor="#ffffff"/>
 
     <RelativeLayout
