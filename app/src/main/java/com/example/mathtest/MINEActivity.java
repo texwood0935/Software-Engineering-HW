@@ -6,16 +6,15 @@ import android.view.View;
 
 import androidx.appcompat.widget.Toolbar;
 
-public class CTRJActivity extends BaseActivity {
+public class MINEActivity extends BaseActivity{
 
-    Toolbar toolbar;
-
+    Toolbar toolbar ;
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ctrj);
+        setContentView(R.layout.activity_mine);
 
-        toolbar=findViewById(R.id.toolbar_ctrj);
+        toolbar=findViewById(R.id.toolbar_mine);
         toolbar.setNavigationIcon(R.mipmap.ic_keyboard_arrow_left_black_24dp);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
@@ -24,6 +23,5 @@ public class CTRJActivity extends BaseActivity {
                 finish();
             }
         });
-
     }
 }

@@ -13,7 +13,7 @@
         android:background="#3366FF"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:title="MATHAPP"
+        app:title="@string/app_name"
         app:titleTextColor="#ffffff"/>
 
     <RelativeLayout
@@ -29,10 +29,9 @@
             android:id="@+id/JZCTBtn"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="256dp"
+            android:layout_alignParentStart="true"
             android:background="@drawable/button1"
-            android:text="家长出题"
+            android:text="@string/jzct"
             android:textColor="#ffffff"
             android:textSize="27sp"
             />
@@ -42,10 +41,10 @@
             android:id="@+id/KSKSBtn"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="128dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="128dp"
             android:background="@drawable/button2"
-            android:text="快速开始"
+            android:text="@string/ksks"
             android:textColor="#ffffff"
             android:textSize="27sp" />
 
@@ -53,10 +52,9 @@
             android:id="@+id/CTRJtn"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="0dp"
+            android:layout_alignParentEnd="true"
             android:background="@drawable/button3"
-            android:text="错题日记"
+            android:text="@string/ctrj"
             android:textColor="#ffffff"
             android:textSize="27sp"
             />
@@ -71,8 +69,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="450dp"
-            android:text="加油！坚持就是胜利！"
-            android:textSize="30dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/encourage"
+            android:textSize="30sp"
             android:textColor="#ffffff"
             android:textAlignment="center"/>
 
@@ -80,23 +79,25 @@
             android:id="@+id/SHOPBtn"
             android:layout_width="100dp"
             android:layout_height="60dp"
-            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_alignParentStart="true"
             android:layout_alignParentBottom="true"
             android:background="@color/colorPrimary"
             android:textColor="#FFFFFF"
-            android:textSize="25dp"
-            android:text="商城"/>
+            android:textSize="25sp"
+            android:text="@string/shop"/>
 
         <Button
             android:id="@+id/MINEBtn"
             android:layout_width="100dp"
             android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginLeft="200dp"
+            android:layout_marginEnd="50dp"
             android:background="@color/colorPrimary"
             android:textColor="#FFFFFF"
-            android:textSize="25dp"
-            android:text="我的" />
+            android:textSize="25sp"
+            android:text="@string/mine" />
 
 
     </RelativeLayout>
