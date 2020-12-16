@@ -14,5 +14,10 @@
     <string name="choose_grade">请选择你的年级</string>
     <string name="answer">答题</string>
     <string name="app_name">小天才培养计划</string>
+    <string name="user_name">小天才</string>
+    <string name="message">消息中心</string>
+    <string name="about_us">关于我们</string>
+    <string name="set">设置</string>
+    <string name="our_detail">HUST_CS1801_软工作业\nFROM:WYZ_BHZ_WHZ_LHJ\nWelcome to contact us!</string>
 
 </resources>

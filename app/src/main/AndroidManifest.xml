@@ -16,6 +16,8 @@
         <activity android:name=".MINEActivity" />
         <activity android:name=".QuestionsActivity" />
         <activity android:name=".DTActivity" />
+        <activity android:name=".MESSAGEActivity" />
+        <activity android:name=".ABOUTUSActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
