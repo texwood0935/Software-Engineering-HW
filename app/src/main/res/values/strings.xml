@@ -13,6 +13,7 @@
     <string name="next">下一题</string>
     <string name="choose_grade">请选择你的年级</string>
     <string name="answer">答题</string>
+    <string name="delete">清空错题日记</string>
     <string name="app_name">小天才培养计划</string>
     <string name="user_name">小天才</string>
     <string name="message">消息中心</string>

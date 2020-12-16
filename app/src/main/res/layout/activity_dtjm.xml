@@ -113,5 +113,4 @@
         android:layout_marginTop="70dp"
         android:background="@drawable/girllearn"/>
 
-
 </LinearLayout>

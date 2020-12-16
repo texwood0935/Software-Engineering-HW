@@ -44,6 +44,7 @@
         android:id="@+id/level_two"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:text="@string/grade_two"
         android:textColor="@drawable/button_text_color2"
         android:background="@drawable/level_button_press"

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CheckBox
+        android:id="@+id/isCheakBox"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/question"
+        android:textSize="40sp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/answer_box"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/question"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:id="@+id/user_answer"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"
+            />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:id="@+id/right_answer"
+            android:textSize="20sp"
+            android:textColor="@color/colorApp"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
