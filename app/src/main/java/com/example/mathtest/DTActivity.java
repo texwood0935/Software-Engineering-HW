@@ -134,6 +134,8 @@ public class DTActivity extends AppCompatActivity {
                                 }
                         });
                         isReturn.show();
+                        //增加金币数，每对5道题5个金币
+                        GoldCoins.getInstance().AddCoins(NumberOfRight*5);
                     }
                 }
                 else {  //未回答时的响应
@@ -311,7 +313,7 @@ public class DTActivity extends AppCompatActivity {
     //错题保存至文件
     private void ErrorSave(){
         BufferedWriter writer = null;
-        File file = new File(this.getFilesDir().getPath() + "/ErrorQuestions.json");
+        File file = new File(this.getFilesDir().getPath() + "/Error.json");
         if (!file.exists()){
             try {
                 file.createNewFile();
@@ -342,7 +344,7 @@ public class DTActivity extends AppCompatActivity {
 
     //读取错题列表
     private void ErrorLoad (){
-        String path = this.getFilesDir().getPath() + "/ErrorQuestions.json";
+        String path = this.getFilesDir().getPath() + "/Error.json";
         File file = new File(path);
         BufferedReader reader = null ;
         String errorload = "";
