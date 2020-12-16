@@ -12,7 +12,6 @@ public class MainActivity extends BaseActivity {
     Button JZCTbtn;
     Button KSKSbtn;
     Button CTRJbtn;
-    Button SHOPbtn;
     Button MINEbtn;
     @Override
     protected void onCreate(Bundle savedInstanceState){
