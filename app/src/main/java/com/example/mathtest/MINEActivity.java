@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.widget.Toolbar;
 
@@ -12,6 +13,7 @@ public class MINEActivity extends BaseActivity{
     Toolbar toolbar ;
     Button MESSAGEbtn;
     Button ABOUTUSbtn;
+    TextView mineCoins;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -28,6 +30,8 @@ public class MINEActivity extends BaseActivity{
             }
         });
 
+        mineCoins=findViewById(R.id.minecoins);
+        mineCoins.setText(GoldCoins.getInstance().GetCoins_String());
         MESSAGEbtn = findViewById(R.id.MESSAGEBtn);
         ABOUTUSbtn = findViewById(R.id.ABOUTUSBtn);
 

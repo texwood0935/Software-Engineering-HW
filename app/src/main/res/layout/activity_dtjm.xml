@@ -13,10 +13,9 @@
         android:id="@+id/toobar_questions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:title="@string/answer"
-        app:titleTextColor="@color/colorWhite"
-        android:background="@color/colorBlue"
-        >
+        android:background="#2196F3"
+        app:title="答案"
+        app:titleTextColor="@color/colorWhite">
 
     </androidx.appcompat.widget.Toolbar>
 
@@ -47,24 +46,24 @@
                 android:id="@+id/answer_tips"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="30sp"
-                android:text="@string/input_answer"
-                android:layout_marginTop="10dp"
                 android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="输入答案"
+                android:textSize="30sp"
 
 
                 />
 
             <EditText
                 android:id="@+id/answer"
-                android:paddingLeft="6dp"
-                android:layout_toRightOf="@id/answer_tips"
                 android:layout_width="80dp"
                 android:layout_height="40dp"
-                android:layout_marginLeft="20dp"
-                android:background="@drawable/edit_answer_back"
                 android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/answer_tips"
+                android:background="@drawable/edit_answer_back"
                 android:inputType="numberDecimal"
+                android:paddingLeft="6dp"
                 android:textSize="20sp" />
 
 
@@ -81,27 +80,27 @@
         android:padding="5dp">
 
         <Button
-            android:padding="6dp"
             android:id="@+id/yes_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/level_button_press"
-            android:text="@string/last"
+            android:padding="6dp"
+            android:text="最后"
             android:textColor="@drawable/button_text_color"
             android:textSize="25sp" />
 
 
         <Button
-            android:padding="6dp"
-            android:layout_marginLeft="15dp"
-            android:layout_toRightOf="@id/yes_button"
             android:id="@+id/nextquestion_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="25sp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/yes_button"
             android:background="@drawable/level_button_press"
+            android:padding="6dp"
+            android:text="下一个"
             android:textColor="@drawable/button_text_color"
-            android:text="@string/next"/>
+            android:textSize="25sp" />
 
 
 

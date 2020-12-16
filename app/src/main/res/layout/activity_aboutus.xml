@@ -7,17 +7,17 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_aboutus"
-        android:background="#3366FF"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:title="@string/about_us"
-        app:titleTextColor="#ffffff"/>
+        android:background="#3366FF"
+        app:title="关于我们"
+        app:titleTextColor="#ffffff" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/our_detail"
-        android:textSize="30dp"/>
+        android:text="our_details"
+        android:textSize="30dp" />
 
 
 
