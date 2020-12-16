@@ -17,6 +17,8 @@ public class ABOUTUSActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_aboutus);
 
+        mineCoins=findViewById(R.id.minecoins);
+        mineCoins.setText(GoldCoins.getInstance().GetCoins_String());
         toolbar=findViewById(R.id.toolbar_aboutus);
         toolbar.setNavigationIcon(R.mipmap.ic_keyboard_arrow_left_black_24dp);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
