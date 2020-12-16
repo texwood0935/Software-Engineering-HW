@@ -36,7 +36,14 @@
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/price"
+        android:id="@+id/price"
+        android:layout_width="174dp"
+        android:layout_height="59dp"
+        android:layout_marginLeft="7dp"
+        android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/coins"
             android:layout_width="174dp"
             android:layout_height="59dp"
             android:layout_marginLeft="7dp"

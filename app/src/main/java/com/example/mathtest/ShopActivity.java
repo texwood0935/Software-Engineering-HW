@@ -35,7 +35,7 @@ public class ShopActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shop);
-        toolbar = findViewById(R.id.toolbar_select);
+        toolbar = findViewById(R.id.toolbar_shop);
         toolbar.setNavigationIcon(R.mipmap.ic_keyboard_arrow_left_black_24dp);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override

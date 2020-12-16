@@ -6,16 +6,16 @@ import android.view.View;
 
 import androidx.appcompat.widget.Toolbar;
 
-public class JZCTActivity extends BaseActivity {
+public class ABOUTUSActivity extends BaseActivity {
 
     Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_jzct);
+        setContentView(R.layout.activity_aboutus);
 
-        toolbar=findViewById(R.id.toolbar_jzct);
+        toolbar=findViewById(R.id.toolbar_aboutus);
         toolbar.setNavigationIcon(R.mipmap.ic_keyboard_arrow_left_black_24dp);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override

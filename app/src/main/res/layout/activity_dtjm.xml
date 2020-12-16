@@ -13,7 +13,7 @@
         android:id="@+id/toobar_questions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:title="@string/toolbar_questions"
+        app:title="@string/answer"
         app:titleTextColor="@color/colorWhite"
         android:background="@color/colorBlue"
         >
@@ -48,7 +48,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="30sp"
-                android:text="@string/answer_tips"
+                android:text="@string/input_answer"
                 android:layout_marginTop="10dp"
                 android:layout_centerVertical="true"
 
@@ -86,7 +86,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/level_button_press"
-            android:text="@string/last_button"
+            android:text="@string/last"
             android:textColor="@drawable/button_text_color"
             android:textSize="25sp" />
 
@@ -101,7 +101,7 @@
             android:textSize="25sp"
             android:background="@drawable/level_button_press"
             android:textColor="@drawable/button_text_color"
-            android:text="@string/nextquestion_button"/>
+            android:text="@string/next"/>
 
 
 
@@ -112,6 +112,5 @@
         android:layout_height="300dp"
         android:layout_marginTop="70dp"
         android:background="@drawable/girllearn"/>
-
 
 </LinearLayout>

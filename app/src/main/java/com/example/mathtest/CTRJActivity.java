@@ -1,32 +1,20 @@
 package com.example.mathtest;
 
-import android.content.DialogInterface;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ListView;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.Toolbar;
 
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.TypeReference;
-
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.nio.charset.Charset;
-
-import java.util.ArrayList;
 
 public class CTRJActivity extends BaseActivity {
 
     Toolbar toolbar;
+
     private ListView listView;
     private ArrayList<TM> TMArrayList;
+
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -41,7 +29,6 @@ public class CTRJActivity extends BaseActivity {
                 finish();
             }
         });
-
         listView = findViewById(R.id.ErrorListView);
         if (ErrorLoad() == 0){
             //创建返回的对话框
@@ -105,5 +92,6 @@ public class CTRJActivity extends BaseActivity {
         TMArrayList  = JSON.parseObject(errorload, new TypeReference<ArrayList<TM>>(){});
         return TMArrayList.size();
     }
+
 
     }
