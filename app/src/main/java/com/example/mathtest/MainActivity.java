@@ -12,6 +12,7 @@ public class MainActivity extends BaseActivity {
     Button JZCTbtn;
     Button KSKSbtn;
     Button CTRJbtn;
+    Button SHOPbtn;
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -19,6 +20,8 @@ public class MainActivity extends BaseActivity {
         JZCTbtn = findViewById(R.id.JZCTBtn);
         KSKSbtn = findViewById(R.id.KSKSBtn);
         CTRJbtn = findViewById(R.id.CTRJtn);
+        SHOPbtn = findViewById(R.id.SHOPBtn);
+
 
 
         setStatusBarColorToLOLLIPOP(MainActivity.this,R.color.colorApp);
@@ -46,6 +49,15 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, JZCTActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        //跳转到商城页面
+        SHOPbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ShopActivity.class);
                 startActivity(intent);
             }
         });

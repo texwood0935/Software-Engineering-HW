@@ -12,6 +12,10 @@
         <activity android:name=".KSKSActivity" />
         <activity android:name=".JZCTActivity" />
         <activity android:name=".CTRJActivity" />
+        <activity android:name=".ShopActivity" />
+        <activity android:name=".MINEActivity" />
+        <activity android:name=".QuestionsActivity" />
+        <activity android:name=".DTActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
