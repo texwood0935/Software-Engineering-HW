@@ -13,6 +13,14 @@
         app:title="@string/ctrj"
         app:titleTextColor="#ffffff"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/DELETEBtn"
+        android:text="@string/delete"
+        android:textSize="20sp"
+        android:background="#3399FF"/>
+
     <ListView
         android:id="@+id/ErrorListView"
         android:layout_width="wrap_content"
