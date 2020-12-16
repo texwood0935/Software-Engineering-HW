@@ -1,7 +1,12 @@
 package com.example.mathtest;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
@@ -19,7 +24,7 @@ import java.io.OutputStreamWriter;
 
 import java.nio.charset.StandardCharsets;
 
-public class GoldCoins {
+public class GoldCoins extends AppCompatActivity {
 //懒汉式的单例模式
     private static GoldCoins instance =null;
 
@@ -37,9 +42,12 @@ public class GoldCoins {
 
     private int coins;
 
-    public int AddCoins(int increaseNum){
+    public boolean AddCoins(int increaseNum){
+        if((coins+increaseNum)<0){
+            return false;
+        }
         coins += increaseNum;
-        return coins;
+        return true;
     }
 
     public String GetCoins_String(){
@@ -52,5 +60,30 @@ public class GoldCoins {
     public int SetCoins(int nums){
         coins = nums;
         return coins;
+    }
+
+    //从文件中读取金币数量
+    private void CoinsLoad (){
+        SharedPreferences sp=getSharedPreferences("coins",MODE_PRIVATE);
+        this.SetCoins(sp.getInt("coins",0));
+    }
+
+    //将金币数量保存在本地
+    public void CoinsSave(){
+        SharedPreferences sp=getSharedPreferences("coins",MODE_PRIVATE);
+        SharedPreferences.Editor editor=sp.edit();
+        editor.putInt("coins",this.GetCoins_Int());
+        editor.commit();
+    }
+
+    @Override
+    protected void onStop(){
+        CoinsSave();
+        super.onStop();
+    }
+    @Override
+    protected void onCreate(Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
+        instance.CoinsLoad();
     }
 }

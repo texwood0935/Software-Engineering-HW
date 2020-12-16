@@ -3,21 +3,14 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <CheckBox
-        android:id="@+id/isCheakBox"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:gravity="center_vertical"
-        android:layout_alignParentRight="true" />
-
     <TextView
+        android:id="@+id/shopname"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:id="@+id/shopname"
-        android:textSize="40sp"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
-        />
+        android:textColor="#0C0B0B"
+        android:textSize="40sp" />
 
     <LinearLayout
         android:id="@+id/shop_box"
@@ -25,31 +18,56 @@
         android:layout_height="405dp"
         android:layout_below="@id/shopname"
         android:layout_marginTop="-2dp"
-        android:orientation="horizontal"
-        android:paddingLeft="20dp">
+        android:orientation="vertical"
+        android:paddingLeft="0dp">
 
         <TextView
             android:id="@+id/status"
-            android:layout_width="210dp"
-            android:layout_height="189dp"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_margin="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
             android:textColor="@color/colorAccent"
             android:textSize="20sp" />
 
         <TextView
-        android:id="@+id/price"
-        android:layout_width="174dp"
-        android:layout_height="59dp"
-        android:layout_marginLeft="7dp"
-        android:textSize="20sp" />
+            android:id="@+id/price"
+            android:layout_width="411dp"
+            android:layout_height="59dp"
+            android:layout_marginLeft="0dp"
+            android:textColor="#0E0D0D"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/coins"
-            android:layout_width="174dp"
+            android:layout_width="411dp"
             android:layout_height="59dp"
-            android:layout_marginLeft="7dp"
+            android:layout_marginLeft="0dp"
+            android:textColor="#070707"
             android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/buy_status"
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            android:layout_marginLeft="0dp"
+            android:textColor="#0C0B0B"
+            android:textSize="15sp" />
 
     </LinearLayout>
 
+    <Button
+        android:id="@+id/BUYBtn"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginBottom="184dp"
+        android:background="@color/colorPrimary"
+        android:text="购买"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp" />
 
 </RelativeLayout>
