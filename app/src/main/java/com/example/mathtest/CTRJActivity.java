@@ -1,7 +1,6 @@
 package com.example.mathtest;
 
 
-
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.Toolbar;
 import android.content.DialogInterface;
@@ -24,14 +23,12 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 
 
-
 public class CTRJActivity extends BaseActivity {
 
     Toolbar toolbar;
     Button DELETEbtn;
     private ListView listView;
     private ArrayList<TM> TMArrayList;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +43,7 @@ public class CTRJActivity extends BaseActivity {
                 finish();
             }
         });
+
         listView = findViewById(R.id.ErrorListView);
         if (ErrorLoad() == 0){
             //创建返回的对话框

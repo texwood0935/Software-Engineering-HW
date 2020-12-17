@@ -31,9 +31,9 @@ import java.util.Collections;
 
 public class ShopActivity extends AppCompatActivity {
 
-   private ListView listView;
-   private List<Items> itemsArrayList=Collections.synchronizedList(new ArrayList<Items>());
-   Toolbar toolbar;
+    private ListView listView;
+    private List<Items> itemsArrayList=Collections.synchronizedList(new ArrayList<Items>());
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
