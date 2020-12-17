@@ -23,6 +23,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
 
 public class GoldCoins extends AppCompatActivity {
 //懒汉式的单例模式
@@ -38,7 +39,7 @@ public class GoldCoins extends AppCompatActivity {
         }
         return instance;
     }
-    private GoldCoins(){coins=0;}
+    private GoldCoins(){}
 
     private int coins;
 
@@ -47,43 +48,37 @@ public class GoldCoins extends AppCompatActivity {
             return false;
         }
         coins += increaseNum;
+        DataSave();
         return true;
     }
 
     public String GetCoins_String(){
+        DataLoad();
         return String.valueOf(coins);
     }
     public int GetCoins_Int(){
+        DataLoad();
         return coins;
     }
 
     public int SetCoins(int nums){
         coins = nums;
+        DataSave();
         return coins;
     }
 
     //从文件中读取金币数量
-    private void CoinsLoad (){
-        SharedPreferences sp=getSharedPreferences("coins",MODE_PRIVATE);
-        this.SetCoins(sp.getInt("coins",0));
+    public void DataLoad (){
+        SharedPreferences sp=MainActivity.getContextObject().getSharedPreferences("Coins",MODE_PRIVATE);
+        coins=sp.getInt("coins",0);
     }
 
     //将金币数量保存在本地
-    public void CoinsSave(){
-        SharedPreferences sp=getSharedPreferences("coins",MODE_PRIVATE);
-        SharedPreferences.Editor editor=sp.edit();
-        editor.putInt("coins",this.GetCoins_Int());
-        editor.commit();
+    public void DataSave(){
+        SharedPreferences sp=MainActivity.getContextObject().getSharedPreferences("Coins",MODE_PRIVATE);
+        SharedPreferences.Editor ed=sp.edit();
+        ed.putInt("coins",coins);
+        ed.commit();
     }
 
-    @Override
-    protected void onStop(){
-        CoinsSave();
-        super.onStop();
-    }
-    @Override
-    protected void onCreate(Bundle savedInstanceState){
-        super.onCreate(savedInstanceState);
-        instance.CoinsLoad();
-    }
 }

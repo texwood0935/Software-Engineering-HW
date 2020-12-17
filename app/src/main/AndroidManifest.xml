@@ -17,6 +17,7 @@
         <activity android:name=".MINEActivity"/>
         <activity android:name=".DTActivity"/>
         <activity android:name=".ShopActivity"/>
+        <activity android:name=".GoldCoins"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
