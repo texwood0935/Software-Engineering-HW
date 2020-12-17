@@ -8,11 +8,11 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_mine"
-        android:background="#3366FF"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:title="@string/mine"
-        app:titleTextColor="#ffffff"/>
+        android:background="#3366FF"
+        app:title="我的"
+        app:titleTextColor="#ffffff" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="40dp"
-            android:text="@string/user_name"
+            android:text="我的名字"
             android:textSize="40sp" />
 
 
@@ -51,10 +51,10 @@
 
 
         <TextView
+            android:id="@+id/minecoins"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="40dp"
-            android:text="34"
             android:textSize="30sp" />
 
 
@@ -71,21 +71,20 @@
             android:layout_width="130dp"
             android:layout_height="130dp"
             android:background="@drawable/message"
-            android:text="@string/message"
+            android:gravity="bottom|center"
+            android:text="消息"
             android:textSize="28dp"
-            android:textStyle="italic"
-            android:gravity="bottom|center"/>
+            android:textStyle="italic" />
 
         <Button
             android:id="@+id/SETBtn"
             android:layout_width="130dp"
             android:layout_height="130dp"
             android:background="@drawable/set"
-            android:text="@string/set"
+            android:gravity="bottom|center"
+            android:text="设置"
             android:textSize="28dp"
-            android:textStyle="italic"
-            android:gravity="bottom|center"/>
-
+            android:textStyle="italic" />
 
 
         <Button
@@ -93,10 +92,10 @@
             android:layout_width="130dp"
             android:layout_height="130dp"
             android:background="@drawable/aboutus"
-            android:text="@string/about_us"
+            android:gravity="bottom|center"
+            android:text="关于我们"
             android:textSize="28dp"
-            android:textStyle="italic"
-            android:gravity="bottom|center"/>
+            android:textStyle="italic" />
 
 
 

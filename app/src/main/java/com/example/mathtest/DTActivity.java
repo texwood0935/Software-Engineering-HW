@@ -123,7 +123,7 @@ public class DTActivity extends AppCompatActivity {
                         //设置标题
                         isReturn.setTitle("本次答题的最终成绩");
                         //设置对话框的消息
-                        isReturn.setMessage("正确答题数目：" + NumberOfRight + "\n" + "错误答题数目:" + (NumberOfQuestions - NumberOfRight) + "\n" + "总数目：" + NumberOfQuestions );
+                        isReturn.setMessage("正确答题数目：" + NumberOfRight + "\n" + "错误答题数目:" + (NumberOfQuestions - NumberOfRight) + "\n" + "总数目：" + NumberOfQuestions + "\n" +"获取金币数：" + NumberOfRight*5 );
                         //设置弹出的对话框不会因为点击别的地方而退出。
                         isReturn.setCancelable(false);
                         //设置按钮并进行监听

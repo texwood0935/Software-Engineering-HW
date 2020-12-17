@@ -18,8 +18,6 @@
         app:title="@string/shop"
         app:titleTextColor="#ffffff"/>
 
-    </androidx.appcompat.widget.Toolbar>
-
 
 
     <ListView

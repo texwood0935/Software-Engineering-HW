@@ -73,7 +73,10 @@ public class ItemsAdapter extends BaseAdapter {
                 }
                 else{
                     String Bstring="恭喜购买成功^v^";
+                    String Cstring = "你的金币: " + GoldCoins.getInstance().GetCoins_String();
+                    viewHolder.coins.setText(Cstring);
                     viewHolder.buy_status.setText(Bstring);
+                    notifyDataSetChanged();
                 }
             }
         });
