@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_aboutus"
+        android:background="#3366FF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/about_us"
+        app:titleTextColor="#ffffff"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/our_detail"
+        android:textSize="30dp"/>
+
+
+
+</LinearLayout>

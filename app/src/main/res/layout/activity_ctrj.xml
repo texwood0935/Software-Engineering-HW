@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_ctrj"
+        android:background="#3366FF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/ctrj"
+        app:titleTextColor="#ffffff"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/DELETEBtn"
+        android:text="@string/delete"
+        android:textSize="20sp"
+        android:background="#3399FF"/>
+
+    <ListView
+        android:id="@+id/ErrorListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+</LinearLayout>
