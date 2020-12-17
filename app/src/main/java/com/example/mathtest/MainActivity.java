@@ -1,5 +1,6 @@
 package com.example.mathtest;
 
+import android.content.Context;
 import android.content.Intent;
 
 import android.os.Bundle;
@@ -7,12 +8,20 @@ import android.os.Bundle;
 import android.view.View;
 
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends BaseActivity {
     Button JZCTbtn;
     Button KSKSbtn;
     Button CTRJbtn;
     Button MINEbtn;
+    Button SHOPbtn;
+
+    private static Context context;
+    public static Context getContextObject(){
+        return context;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -22,6 +31,8 @@ public class MainActivity extends BaseActivity {
         CTRJbtn = findViewById(R.id.CTRJtn);
         SHOPbtn = findViewById(R.id.SHOPBtn);
         MINEbtn = findViewById(R.id.MINEBtn);
+        context=getApplicationContext();
+
 
 
 
@@ -71,6 +82,7 @@ public class MainActivity extends BaseActivity {
                 startActivity(intent);
             }
         });
+        GoldCoins.getInstance().DataLoad();
 
     }
 
