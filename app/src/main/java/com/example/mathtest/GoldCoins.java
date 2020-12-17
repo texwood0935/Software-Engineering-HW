@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.SharedPreferences;
 
+import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
 
 public class GoldCoins extends AppCompatActivity {
     //懒汉式的单例模式

@@ -18,6 +18,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 
@@ -80,7 +81,7 @@ public class CTRJActivity extends BaseActivity {
     }
 
     private int  ErrorLoad (){
-        String path = this.getFilesDir().getPath() + "/Error.json";
+        String path = this.getFilesDir().getPath() + "/ErrorTM.json";
         File file = new File(path);
         BufferedReader reader = null ;
         String errorload = "";
@@ -93,7 +94,7 @@ public class CTRJActivity extends BaseActivity {
         //读取文件存放在String errorload中
         try {
             FileInputStream fileInputStream = new FileInputStream(file);
-            InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream, StandardCharsets.UTF_8);
+            InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream, Charset.forName("UTF-8"));
             reader = new BufferedReader(inputStreamReader);
             String tempString = null;
             while((tempString = reader.readLine())!=null){
@@ -120,10 +121,12 @@ public class CTRJActivity extends BaseActivity {
         return TMArrayList.size();
     }
 
+
+
     private String GetPath(){
         String path = this.getFilesDir().getPath() + "/Error.json";
         return path;
     }
 
 
-    }
+}

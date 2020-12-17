@@ -7,11 +7,11 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_jzct"
-        android:background="#3366FF"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:title="@string/jzct"
-        app:titleTextColor="#ffffff"/>
+        android:background="#3366FF"
+        app:title="家长出题"
+        app:titleTextColor="#ffffff" />
 
 
 </LinearLayout>

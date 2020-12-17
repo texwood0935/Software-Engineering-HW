@@ -10,7 +10,7 @@ import androidx.appcompat.widget.Toolbar;
 public class ABOUTUSActivity extends BaseActivity {
 
     Toolbar toolbar;
-    TextView mineCoins;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState){

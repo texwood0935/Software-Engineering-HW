@@ -14,9 +14,9 @@
         android:id="@+id/toolbar_select"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:title="@string/choose_grade"
-        app:titleTextColor="#ffffff"
-        android:background="@color/colorBlue">
+        android:background="#2196F3"
+        app:title="选择年级"
+        app:titleTextColor="#ffffff">
 
     </androidx.appcompat.widget.Toolbar>
 
@@ -34,33 +34,35 @@
         android:id="@+id/level_one"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/grade_one"
-        android:textColor="@drawable/button_text_color"
-        android:background="@drawable/level_button_press"
         android:layout_marginTop="70dp"
+        android:background="@drawable/level_button_press"
+        android:text="一年级"
+        android:textColor="@drawable/button_text_color"
 
         />
+
     <Button
         android:id="@+id/level_two"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        android:text="@string/grade_two"
-        android:textColor="@drawable/button_text_color2"
-        android:background="@drawable/level_button_press"
         android:layout_marginTop="10dp"
+        android:background="@drawable/level_button_press"
+        android:text="二年级"
+        android:textColor="@drawable/button_text_color2"
 
         />
+
     <Button
         android:id="@+id/level_three"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/grade_three"
-        android:textColor="@drawable/button_text_color3"
-        android:background="@drawable/level_button_press"
         android:layout_marginTop="10dp"
+        android:background="@drawable/level_button_press"
+        android:text="三年级"
+        android:textColor="@drawable/button_text_color3"
 
-    />
+        />
 
     <View
         android:layout_width="200dp"

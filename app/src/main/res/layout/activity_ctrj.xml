@@ -7,19 +7,19 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_ctrj"
-        android:background="#3366FF"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:title="@string/ctrj"
-        app:titleTextColor="#ffffff"/>
+        android:background="#3366FF"
+        app:title="错题集"
+        app:titleTextColor="#ffffff" />
 
     <Button
+        android:id="@+id/DELETEBtn"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:id="@+id/DELETEBtn"
-        android:text="@string/delete"
-        android:textSize="20sp"
-        android:background="#3399FF"/>
+        android:background="#3399FF"
+        android:text="删除"
+        android:textSize="20sp" />
 
     <ListView
         android:id="@+id/ErrorListView"

@@ -30,7 +30,6 @@ public class MINEActivity extends BaseActivity{
             }
         });
 
-
         mineCoins = findViewById(R.id.minecoins);
         mineCoins.setText(GoldCoins.getInstance().GetCoins_String());
         MESSAGEbtn = findViewById(R.id.MESSAGEBtn);

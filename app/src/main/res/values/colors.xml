@@ -5,9 +5,8 @@
     <color name="colorAccent">#D81B60</color>
     <color name="colorYellow">#FFFF00</color>
     <color name="colorApp">#18D78A</color>
-    <color name="colorButton">#EEEEEE</color>
-    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorButton">#eeeeee</color>
+    <color name="colorWhite">#ffffff</color>
     <color name="colorOrange">#f76809</color>
     <color name="colorLittleYellow">#e6e61a</color>
-    <color name="colorBlue">#0000Ff</color>
 </resources>
